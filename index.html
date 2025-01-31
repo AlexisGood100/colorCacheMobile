@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/pallets.css">
+    <link rel="stylesheet" href="styles/bottom.css">
+    <link rel="stylesheet" href="styles/top.css">
+    <link rel="stylesheet" href="styles/containerAll.css">
+    <link rel="stylesheet" href="styles/score.css">
+    <link rel="stylesheet" href="styles/packages.css">
+    <link rel="stylesheet" href="styles/instructions.css">
+    <link rel="stylesheet" href="styles/track.css">
+    <link rel="stylesheet" href="styles/stage3.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/randomColor/0.6.1/randomColor.min.js" defer></script>
+
+    <title>Color Cache Game</title>
+</head>
+<body>
+ 
+    
+
+
+
+    
+
+
+
+
+<!-- Start of intro -->
+<div class="div-instructions">
+<h1>Welcome to the Color Cache Game.</h1>
+
+    <p>Today you will be sorting colors to the corresponding color cache.</p>
+    <p>Click a color and then click the pallet that has the same color (use number if unsure) to score points.</p>
+    <div class="btn-start-game-container">
+        <p>Please choose Stage</p>
+        <div class="div-button-start-container">
+
+            <button class="btn-stage-1 mode">Stage 1</button>
+            
+        </div>
+        
+        <p>Please choose starting color scheme.</p>
+        <div class="div-color-difficulty-tiers-container hide">
+            <p class="p-stage-start hide">Stage: <span class="span-stage-start">0</span></p>
+            <p>Easy</p>
+            <div class="div-easy-color-modes">
+                <button class="btn-show-difficulty-selection btn-red-scheme mode">Red</button>
+                <button class="btn-show-difficulty-selection btn-blue-scheme mode">Blue</button>
+                <button class="btn-show-difficulty-selection btn-purple-scheme mode">Purple</button>
+                <button class="btn-show-difficulty-selection btn-cosmic-scheme mode">Cosmic</button>
+                <button class="btn-show-difficulty-selection btn-alien-invasion-scheme mode">Alien Invasion</button>
+                <button class="btn-show-difficulty-selection btn-thanksgiving-scheme mode">Thanksgiving</button>
+                <button class="btn-show-difficulty-selection btn-medieval-scheme mode">Medieval</button>
+                <button class="btn-show-difficulty-selection btn-halloween-scheme mode">Halloween</button>
+                <button class="btn-show-difficulty-selection btn-christmas-scheme mode">Christmas</button>
+           
+            </div>
+           
+            <p>Medium</p>
+            <div class="div-medium-color-modes">
+                <button class="btn-show-difficulty-selection btn-pink-scheme mode">Pink</button>
+                <button class="btn-show-difficulty-selection btn-underwater-scheme mode">Underwater Sea</button>
+                <button class="btn-show-difficulty-selection btn-unique-color-scheme mode">Unique</button>
+                <button class="btn-show-difficulty-selection btn-random-gradients-theme mode">Random Gradients</button>
+            </div>
+
+            <p>Expert</p>
+            <div class="div-expert-color-modes">
+                <button class="btn-show-difficulty-selection btn-creme-scheme mode">Creme</button>
+                <button class="btn-show-difficulty-selection btn-silver-scheme mode">Silver</button>
+                <button class="btn-show-difficulty-selection btn-clouds-theme mode">Clouds</button>
+                <button class="btn-show-difficulty-selection btn-custom-theme mode">Custom</button>
+            </div>
+
+<!-- Add sample of pallete here -->
+<div class="div-sample-pallet-container hide">
+
+</div>
+
+<!-- End of sample of pallete here -->
+        </div>
+      <div class="div-difficulty-btn-container hide">
+
+          <p>Please choose difficulty.</p>
+          <button class="btn-easy-mode mode">Easy</button>
+          <button class="btn-medium-mode mode">Medium</button>
+          <button class="btn-hard-mode mode">Hard</button>
+        </div>
+    </div>
+</div>
+<!-- End of intro -->
+
+<!-- Custom Color Selection -->
+
+<div class="div-custom-color-selection-container hide">
+    <h2>Custom Colors</h2>
+    <p>Pick 24 colors to represent the Pallet and Package colors.</p>
+    <p><span class="span-number-of-selected-custom-colors"></span>/24</p>
+    <div class="div-player-selected-custom-colors">
+           
+    </div>
+    <div class="div-selection-custom-colors">
+
+        
+        <div class="div-custom-colors-selection">
+           
+        </div>
+    </div>
+</div>
+
+
+<!-- End of custom color selection -->
+
+<div class="div-game-body hide">
+
+    <div class="div-score-container">
+        <p>Score: <span class="span-score">0</span></p>
+        <p>Boxes Sorted: <span class="span-boxes-sorted">0</span></p>
+       
+    </div>
+
+    <div class="div-score-container">
+        <p>Current Color Number: <span class="span-current-package-route-number">N/A</span></p>
+        <p>Current Theme: <span class="span-current-theme">Null</span></p>
+        <p>Timer: <span class="span-timer">0</span></p>
+        <p>Total colors on track: <span class="span-total-boxes-on-track">0</span></p>
+
+     
+    </div>
+
+<!-- Testing out creating another layout using existing code but changing some html and styles. -->
+<div class="div-level-boss-fight-container hide">
+    <div class="div-boss-container">
+        <p class="div-boss-health">Health: 0</p>
+    </div>
+    <div class="container-for-all-boss-stage-inner-content">
+        
+        
+        <div class="div-level-boss-tracks">
+        <div class="div-boss-stage-pallets-left"></div>
+        <div class="div-boss-stage-pallets-left-2"></div>
+            <div class="div-level-boss-track boss-stage-fire-track boss-track-1">
+                <!-- <div class="boss-level-element">
+                    
+                </div> -->
+            </div>
+        <div class="div-level-boss-track boss-stage-random-color-track boss-track-2"></div>
+        <div class="div-level-boss-track boss-stage-earth-color-track boss-track-3"></div>
+        <div class="div-level-boss-track boss-stage-green-color-track boss-track-4"></div>
+        <div class="div-level-boss-track boss-stage-ocean-color-track boss-track-5"></div>
+        <div class="div-boss-stage-pallets-right"></div>
+        <div class="div-boss-stage-pallets-right-2"></div>
+    </div>
+</div>
+   
+</div>
+
+<!-- Code do not touch under because it is for the first level original -->
+<div class="div-container-all level-one hide">
+    <div class="div-top">
+ 
+    </div>
+    <div class="div-top-2nd">
+ 
+    </div>
+
+    <div class="div-middle">
+
+<div class="div-track-top">
+    
+</div>
+
+
+<div class="div-track-bottom">
+
+</div>
+       
+    </div>
+    <div class="div-bottom">
+
+</div>
+<div class="div-bottom-2nd">
+
+</div>
+
+    
+</div>
+<div class="div-container-all-l2 hide">
+    <div class="div-track-top-l2">
+
+    </div>
+    <div class="div-track-top-2nd-l2">
+
+    </div>
+    <div class="div-middle-container-l2">
+        <div class="div-track-left-side-l2">
+
+        </div>
+        <div class="div-track-left-side-2nd-l2">
+
+        </div>
+
+    <div class="div-middle-l2">
+<div class="div-pallet-mid-1-l2 div-pallet-mid"></div>
+<div class="div-pallet-mid-2-l2 div-pallet-mid"></div>
+<div class="div-pallet-mid-3-l2 div-pallet-mid"></div>
+<div class="div-pallet-mid-4-l2 div-pallet-mid"></div>
+    </div>    
+    <div class="div-track-right-side-l2">
+
+    </div>
+    <div class="div-track-right-side-2nd-l2">
+
+    </div>
+</div>
+<div class="div-track-bottom-l2">
+    
+</div>
+<div class="div-track-bottom-2nd-l2">
+    
+</div>
+
+      
+</div>
+<div class="ring-circle-container hide">
+    <div class="div-color-palette-container">
+
+    </div>
+    
+
+
+ 
+<div class="ring ring-1">
+ 
+    
+</div>
+<div class="ring ring-2">
+
+      </div>
+<div class="ring ring-3">
+
+ 
+</div>
+
+<div class="ring ring-4">
+
+</div>
+<div class="ring ring-5">
+
+</div>
+</div>
+
+
+</div>
+<!-- End of game body -->
+
+
+
+
+
+<!-- Scripts -->
+ <!-- function scripts -->
+<script src="functions/createPackage.js"></script>
+<script src="functions/grabRandomNumberFromArray.js"></script>
+<script src="functions/insertPackagesOnTrack.js"></script>
+<script src="functions/createPackageForDisplay.js"></script>
+<script src="functions/createPallet.js"></script>
+<script src="functions/assignIDsToPackage.js"></script>
+<script src="functions/createPalletDisplay.js"></script>
+<script src="functions/createOddOrEvenNumsWithinRange.js"></script>
+<script src="functions/setBoxesOnTrack.js"></script>
+<script src="functions/setTimer.js"></script>
+<script src="functions/removeDisplayElement.js"></script>
+<script src="functions/findTotalBoxesOnTrack.js"></script>
+<script src="functions/handleStamina.js"></script>
+<script src="functions/updatePackageCountOnTrack.js"></script>
+<script src="functions/handleFatigue.js"></script>
+<script src="functions/stopTrackIfTooManyBoxes.js"></script>
+
+<script src="functions/addToStackWeight.js"></script>
+<script src="functions/runPallet.js"></script>
+<script src="functions/createRandomRGBValueObject.js"></script>
+
+<script src="functions/changeColorForEachPallet.js"></script>
+<script src="functions/changeColorPalletePackages.js"></script>
+<script src="functions/checkForSpecificStyleAndApplyToPackage.js"></script>
+<script src="functions/checkRouteNumberMapToColor.js"></script>
+<script src="functions/changeThemeDisplay.js"></script>
+<script src="functions/removeAllBackgroundFromLevelOne.js"></script>
+<script src="functions/removeAllBackgroundFromLevelThree.js"></script>
+<script src="functions/stripPalletsOfAllThemes.js"></script>
+<script src="functions/applyStyleToPalletDependingOnTheme.js"></script>
+<!-- End of function scripts -->
+
+<!-- Event listeners -->
+
+ <script src="functions/eventListeners/btnCustomTheme.js"></script>
+
+ 
+<script src="functions/eventListeners/btnEmode.js"></script>
+<script src="functions/eventListeners/btnMmode.js"></script>
+<script src="functions/eventListeners/btnHmode.js"></script>
+<script src="functions/eventListeners/btnUpgradeNumOfBoxesAllowedOnTrack.js"></script>
+
+<script src="functions/eventListeners/colorSchemeButtons/colorSchemeButtons.js"></script>
+
+
+
+
+
+<script src="functions/eventListeners/btnGradientsTheme.js"></script>
+<script src="functions/eventListeners/allColorButtonsGeneralization.js"></script>
+<script src="functions/eventListeners/btnStage1.js"></script>
+
+<!-- End of event listeners -->
+
+
+<!-- Start of color storage  -->
+
+<script src="functions/createColorForSchema.js"></script>
+
+<!-- End of color storage -->
+
+<!-- End of scripts -->
+
+    <script src="script.js"></script>
+</body>
+</html>
