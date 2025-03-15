@@ -1,0 +1,327 @@
+body {
+    box-shadow: 0 0 15px 5px #00f0ff; /* Intense neon glow */
+}
+
+
+.hide {
+    display: none;
+}
+
+
+
+
+p {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/* End of character Selection */
+
+
+/* Testing  */
+
+body {
+    background-color: #000;
+    color: #00ff00;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+
+
+
+
+
+.ul-game-statistics {
+    list-style-type: none;
+    padding: 0;
+   
+}
+.ul-game-statistics li{
+    margin:0 auto;
+    text-align:center;
+}
+
+.menu-title{
+    text-align: center;
+}
+
+
+.div-matches{
+    display:flex;
+    /* flex-direction: column; */
+}
+
+.div-pallet-colors span{
+    margin:2rem;
+}
+
+
+.div-custom-color{
+    width:100px;
+    height:100px;
+    margin:.5rem;
+color:white;
+
+}
+
+
+
+
+    .div-pallet-mid-1-l2{
+        display:flex;
+        margin:1rem;
+        height:13vh;
+  
+    }
+    .div-pallet-mid-2-l2{
+        display:flex;
+        margin:1rem;
+        height:13vh;
+    }
+    .div-pallet-mid-3-l2{
+        display:flex;
+        margin:1rem;
+        height:13vh;
+    }
+    .div-pallet-mid-4-l2{
+        display:flex;
+        margin:1rem;
+        height:13vh;
+    }
+
+
+
+
+
+  /* Trying out custom skins for the pallets */
+  .halloweenBackground{
+      background-position: center;
+      background-image: url('./images/backgroundsCustom/halloweenBackground.jpg');
+      background-repeat: no-repeat;
+      /* background-image: cover; */
+  }
+
+  .pinkBackground{
+    /* background-position: center; */
+    background-image: url('./images/backgroundsCustom/pinkBackground.jpg');
+    background-repeat: no-repeat;
+    background-image: center;
+}
+
+.uniqueBackground{
+    background-position: center;
+    background-image: url('./images/backgroundsCustom/uniqueBackground.jpg');
+    background-repeat: no-repeat;
+    /* background-image: cover; */
+}
+
+.purpleBackground{
+    background-position: center;
+    background-image: url('./images/backgroundsCustom/purpleBackground.jpg');
+    background-repeat: no-repeat;
+    /* background-image: cover; */
+}
+
+.redBackground{
+    background-position: center;
+    background-image: url('./images/backgroundsCustom/redBackground.jpg');
+    background-repeat: no-repeat;
+    /* background-image: cover; */
+}
+
+.goldBackground{
+    background-position: center;
+    background-image: url('./images/backgroundsCustom/goldBackground.jpg');
+    background-repeat: no-repeat;
+    /* background-image: cover; */
+}
+
+.christmasBackground{
+    background-position: center;
+    background-image: url('./images/backgroundsCustom/christmasBackground.jpg');
+    background-repeat: no-repeat;
+    /* background-image: cover; */
+}
+
+.undertheseaBackground{
+    background-position: center;
+    background-image: url('./images/backgroundsCustom/undertheseaBackground.jpg');
+    background-repeat: no-repeat;
+    /* background-image: cover; */
+}
+
+.thanksgivingBackground{
+    background-position: center;
+    background-image: url('./images/backgroundsCustom/thanksgivingBackground.jpg');
+    background-repeat: no-repeat;
+    /* background-image: cover; */
+}
+
+.alienInvasionBackground{
+    background-position: center;
+    background-image: url('./images/backgroundsCustom/alienBackground.jpg');
+    background-repeat: no-repeat;
+    /* background-image: cover; */
+}
+
+.cremeBackground{
+    background-position: center;
+    background-image: url('./images/backgroundsCustom/cremeBackground.jpg');
+    background-repeat: no-repeat;
+    /* background-image: cover; */
+}
+
+.blueBackground{
+    background-position: center;
+    background-image: url('./images/backgroundsCustom/blueBackground.jpg');
+    background-repeat: no-repeat;
+    /* background-image: cover; */
+}
+
+.medevilBackground{
+    background-position: center;
+    background-image: url('./images/backgroundsCustom/medevilBackground.jpg');
+    background-repeat: no-repeat;
+    /* background-image: cover; */
+}
+
+.cosmicBackground{
+    background-position: center;
+    background-image: url('./images/backgroundsCustom/cosmicBackground.jpg');
+    background-repeat: no-repeat;
+    /* background-image: cover; */
+}
+
+.gradientBackground{
+    background-position: center;
+    background-image: url('./images/backgroundsCustom/gradientBackground.jpg');
+    background-repeat: no-repeat;
+    /* background-image: cover; */
+}
+
+.cloudBackground{
+    background-position: center;
+    background-image: url('./images/backgroundsCustom/cloudBackground.jpg');
+    background-repeat: no-repeat;
+    /* background-image: cover; */
+}
+.customBackground{
+    background-position: center;
+    background-image: url('./images/backgroundsCustom/customBackground.jpg');
+    background-repeat: no-repeat;
+    /* background-image: cover; */
+}
+
+
+
+/* Testing individual styles for the packages for the specific theme that was choosen */
+
+/* Medieval level one package styles */
+.sword-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:5vw;
+    /* margin: 0 auto; */
+    margin:.5rem;
+}
+
+.blade {
+    width: 10px;
+    height: 30px;
+    background: silver;
+    border-radius: 0 0 5px 5px;
+}
+
+.guard {
+    width: 30px;
+    height: 10px;
+    background: gray;
+    /* margin-top: 5px; */
+}
+
+.handle {
+    width: 15px;
+    height: 50px;
+    background: brown;
+    /* /* border-radius: 0 0 5px 5px; */
+    /* margin-top: 5px;  */
+}
+
+/* Fish outlay for level 1 and 2 */
+
+.fish {
+    position: relative;
+    width: 150px;
+    height: 100px;
+    background-color: #3498db;
+    border-radius: 50% 50% 50% 0;
+    transform: rotate(-45deg);
+}
+
+.fish::after {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    width: 5px;
+    height: 5px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.tail {
+    position: absolute;
+    top: 30px;
+    right: -30px;
+    width: 50px;
+    height: 50px;
+    background-color: #3498db;
+    border-radius: 0 50% 50% 50%;
+    transform: rotate(-45deg);
+}
+
+.fin {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    width: 30px;
+    height: 20px;
+    background-color: #2980b9;
+    border-radius: 0 50% 50% 0;
+    transform: rotate(-30deg);
+}
+
+.eye {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+
+  
+
+
+  /* Button Styling */
+.btn-unpause {
+    background-color: #f39c12; /* Orange button background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'Orbitron', sans-serif;
+    transition: background-color 0.3s ease;
+    margin-left:47%;
+}

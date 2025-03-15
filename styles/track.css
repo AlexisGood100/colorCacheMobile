@@ -1,0 +1,25 @@
+.div-middle {
+    width: 100vw;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px; /* Subtle rounding */
+}
+
+
+.div-track-top {
+    width: 100vw;
+    height: 25vh;
+    display: flex;
+    border-radius: 10px; /* Softer corners */
+}
+
+
+.div-track-bottom {
+    width: 100vw;
+    height: 25vh;
+    display: flex;
+    border-radius: 10px; /* Softer corners */
+}
+
+

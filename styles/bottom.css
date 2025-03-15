@@ -1,0 +1,20 @@
+.div-bottom {
+    width: 100vw;
+    display: flex;
+    border-radius: 0 0 20px 20px; /* Rounded bottom corners */
+    margin:0 auto;
+    margin-top:2rem;
+
+}
+
+
+.div-bottom-2nd div{
+    margin-top:2rem;
+}
+
+.div-bottom-2nd{
+    width: 100vw;
+    display: flex;
+    border-radius: 20px 20px 0 0; /* Rounded top corners */
+    margin:0 auto;
+}
